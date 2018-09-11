@@ -1,6 +1,9 @@
 JsonPath
 ========
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Peekmo/jsonpath/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+[![Build Status](https://travis-ci.org/lar-dragon/JsonPath.svg?branch=master)](https://travis-ci.org/lar-dragon/JsonPath)
+[![Latest Stable Version](https://poser.pugx.org/peekmo/jsonpath/version)](https://packagist.org/packages/peekmo/jsonpath)
+[![Total Downloads](https://poser.pugx.org/peekmo/jsonpath/downloads)](https://packagist.org/packages/peekmo/jsonpath)
 
 JsonPath utility (XPath for JSON) for PHP based on **Stefan Goessner's** implementation : http://code.google.com/p/jsonpath/
 

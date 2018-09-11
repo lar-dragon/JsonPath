@@ -17,5 +17,9 @@
     "require": {
         "php": ">=5.3.3"
     },
+    "scripts": {
+        "test": "phpunit --verbose --configuration phpunit.xml",
+        "docs": "phpdoc run --verbose --config=phpdoc.xml"
+    },
     "minimum-stability": "dev"
 }
