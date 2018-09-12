@@ -232,7 +232,11 @@ class JsonPath
         $expr = preg_replace(array("/\\$/", "/@/"), array("\$this->obj", "\$v"), $x);
         $expr = preg_replace("#\[([a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*)\]#", "['$1']", $expr);
         
-        $res = eval("\$name = $expr;");
+		$res = @eval("\$name = $expr;");
+		var_dump($res, $name, $expr);
+		if ($res === null) {
+			return '';
+		}
 
         if ($res === false) {
             print("(jsonPath) SyntaxError: " . $expr);

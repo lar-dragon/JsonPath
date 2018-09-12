@@ -90,7 +90,7 @@ class JsonStoreTest extends \PHPUnit_Framework_TestCase
     public function testGetAllByKeyFiltered()
     {
         $data = $this->jsonStore->get("$..book[(@.code=='02.01')].category");
-        $expected = ["fiction", "fiction"];
+        $expected = ["fiction"];
         $this->assertEquals($data, $expected);
     }
 
